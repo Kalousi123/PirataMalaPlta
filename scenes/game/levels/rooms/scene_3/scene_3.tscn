@@ -1,13 +1,12 @@
-[gd_scene load_steps=14 format=3 uid="uid://dfmikjtrqa3f1"]
+[gd_scene load_steps=13 format=3 uid="uid://dfmikjtrqa3f1"]
 
 [ext_resource type="AudioStream" uid="uid://dfb4lvan1kwl2" path="res://assets/sounds/pirate_theme.ogg" id="1_webjj"]
 [ext_resource type="PackedScene" uid="uid://ca3ueo0yewjov" path="res://scenes/game/characters/main_character/main_character.tscn" id="2_yauy0"]
 [ext_resource type="PackedScene" uid="uid://8rbt5lmdrp0s" path="res://scenes/game/camera/camera.tscn" id="4_1uq16"]
 [ext_resource type="TileSet" uid="uid://bx1rsqucrwm2i" path="res://assets/resources/bg_tile_set.tres" id="5_b5kap"]
 [ext_resource type="PackedScene" uid="uid://brhmupxo2xjim" path="res://scenes/game/levels/objects/change_scene/door_change_scene.tscn" id="6_xjhqp"]
-[ext_resource type="PackedScene" uid="uid://bo37g7mv4j6pn" path="res://scenes/game/enemy/crabby.tscn" id="7_rifnd"]
+[ext_resource type="PackedScene" uid="uid://b270rwdaoog0f" path="res://scenes/game/characters/npc/npc.tscn" id="10_4acys"]
 [ext_resource type="PackedScene" uid="uid://c2e1lhm1w4re4" path="res://scenes/game/levels/objects/damage_object/spikes/spikes.tscn" id="11_v15ae"]
-[ext_resource type="Texture2D" uid="uid://ntgt51twdxdm" path="res://assets/sprites/treasure_hunters/palm_tree_island/sprites/background/water_reflect_medium_03.png" id="12_pp8ms"]
 [ext_resource type="PackedScene" uid="uid://deedu63sld0es" path="res://scenes/game/levels/objects/death/death.tscn" id="17_510pc"]
 [ext_resource type="Texture2D" uid="uid://cg6wkkuni8aq8" path="res://assets/sprites/treasure_hunters/palm_tree_island/sprites/background/bg_image.png" id="18_su6rn"]
 
@@ -174,43 +173,11 @@ _path_to_scene = "res://scenes/game/levels/rooms/scene_4/scene_4.tscn"
 
 [node name="Enemies" type="Node2D" parent="."]
 
-[node name="Crabby" parent="Enemies" instance=ExtResource("7_rifnd")]
-position = Vector2(924, 263)
-scale = Vector2(4.25, 4.25)
-animation = "idle"
-moving_direction = "left"
-
 [node name="CollectableObjects" type="Node2D" parent="."]
 
 [node name="TakingDamageObject" type="Node2D" parent="."]
 
 [node name="DamageObject" type="Node2D" parent="."]
-
-[node name="WaterReflect" type="Node2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="WaterReflect"]
-z_index = -1
-position = Vector2(179, 477)
-scale = Vector2(5, 5)
-texture = ExtResource("12_pp8ms")
-
-[node name="Sprite2D2" type="Sprite2D" parent="WaterReflect"]
-z_index = -1
-position = Vector2(409, 445)
-scale = Vector2(5, 5)
-texture = ExtResource("12_pp8ms")
-
-[node name="Sprite2D3" type="Sprite2D" parent="WaterReflect"]
-z_index = -1
-position = Vector2(738, 544)
-scale = Vector2(5, 5)
-texture = ExtResource("12_pp8ms")
-
-[node name="Sprite2D4" type="Sprite2D" parent="WaterReflect"]
-z_index = -1
-position = Vector2(949, 464)
-scale = Vector2(5, 5)
-texture = ExtResource("12_pp8ms")
 
 [node name="Objects" type="Node2D" parent="."]
 
@@ -218,3 +185,7 @@ texture = ExtResource("12_pp8ms")
 
 [node name="Death" parent="DieArea" instance=ExtResource("17_510pc")]
 position = Vector2(875, 21)
+
+[node name="Npc_boss" parent="." instance=ExtResource("10_4acys")]
+position = Vector2(1005, 227)
+scale = Vector2(2, 2)

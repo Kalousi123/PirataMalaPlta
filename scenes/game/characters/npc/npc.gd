@@ -20,7 +20,7 @@ func _ready():
 
 func _physics_process(delta):
 	# Agregamos la velocidad
-	velocity.y += 1000 * delta
+	
 	move_and_slide() # Agregamos kinematica
 	if is_on_floor():
 		# Apagamos la física

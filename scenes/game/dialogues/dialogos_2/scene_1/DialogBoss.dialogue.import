@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cipgjjafcjpe6"
+path="res://.godot/imported/DialogBoss.dialogue-273b3f89659bc97147ca79fc19493948.tres"
+
+[deps]
+
+source_file="res://scenes/game/dialogues/dialogos_2/scene_1/DialogBoss.dialogue"
+dest_files=["res://.godot/imported/DialogBoss.dialogue-273b3f89659bc97147ca79fc19493948.tres"]
+
+[params]
+
+defaults=true

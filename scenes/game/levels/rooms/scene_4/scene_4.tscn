@@ -21,11 +21,12 @@ position = Vector2(274, 476)
 character = NodePath("../MainCharacter")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 290.0
-offset_top = 359.0
-offset_right = 602.0
-offset_bottom = 386.0
+offset_left = 229.0
+offset_top = 325.0
+offset_right = 637.0
+offset_bottom = 376.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("4_0xvxb")
 theme_override_font_sizes/font_size = 24
-text = "Continuará..."
+text = "Empieza una
+nueva aventura..."

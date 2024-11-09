@@ -1,0 +1,14 @@
+~ dialogue_1
+
+Diavlito chacalon: ¡Tengo todos tus tesoros!
+- Devuelvelos bribón.
+Diavlito chacalon: Sí, claro. Ve a mi barco y vence a mi tripulación.
+
+- ¡lo intentaré!
+  => dialogue_2
+
+
+~ dialogue_2
+Diavlito chacalon: ¡Bueno nos vemos! Un gusto.
+- Chau.
+=> END
