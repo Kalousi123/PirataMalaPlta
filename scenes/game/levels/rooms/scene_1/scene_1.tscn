@@ -145,11 +145,6 @@ position = Vector2(1339, -295)
 position = Vector2(298, -108)
 texture = ExtResource("13_amc1m")
 
-[node name="DoorChangeScene" parent="Objects" instance=ExtResource("17_ydyba")]
-position = Vector2(1250, -135)
-scale = Vector2(0.8, 0.8)
-script = null
-
 [node name="Spikes" parent="Objects" instance=ExtResource("19_4ldx5")]
 position = Vector2(389, 17)
 
@@ -221,6 +216,11 @@ position = Vector2(1149, 460)
 
 [node name="MainCharacter" parent="." instance=ExtResource("15_ooixx")]
 position = Vector2(132, 520)
+
+[node name="DoorChangeScene" parent="." instance=ExtResource("17_ydyba")]
+position = Vector2(1393, 379)
+scale = Vector2(0.75, 0.75)
+_path_to_scene = "res://scenes/game/levels/rooms/scene_2/scene_2.tscn"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("1_0t8t3")
